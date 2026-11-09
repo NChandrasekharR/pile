@@ -91,6 +91,10 @@ icons/
 
 There's no build step. Edit a file, then hit reload on Pile's card in `chrome://extensions`.
 
+## Roadmap
+
+What's next, and what's deliberately not, is in [ROADMAP.md](ROADMAP.md).
+
 ## License
 
 [MIT](LICENSE)

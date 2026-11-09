@@ -148,6 +148,55 @@ kbd {
 .callout { margin: 0 0 36px; padding: 18px 20px; border: 1px solid var(--rule); border-left: 3px solid var(--keep); background: var(--panel); }
 .callout p { margin: 0; color: var(--ink); }
 
+/* ---------- roadmap (rendered from ROADMAP.md by roadmap.js) ---------- */
+
+.doc.road { max-width: 880px; }
+.road-status { color: var(--ink-2); }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.road-intro { max-width: 660px; margin-bottom: 44px; }
+.road-intro p { margin: 0 0 14px; font-size: 17px; }
+
+.rail { border-top: 1px solid var(--rule); }
+.horizon {
+  display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 0 32px;
+  padding: 30px 0 34px; border-bottom: 1px solid var(--rule);
+}
+.doc .horizon h2 {
+  display: flex; align-items: center; gap: 12px; align-self: start; margin: 0;
+  font: 11px/1.9 var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--ink-2);
+}
+.horizon h2::before {
+  content: ""; flex: none; width: 9px; height: 9px; border-radius: 50%;
+  border: 1.5px solid var(--ink-2);
+}
+.horizon.today h2 { color: var(--keep); }
+.horizon.today h2::before { background: var(--keep); border-color: var(--keep); box-shadow: 0 0 0 4px rgba(14, 107, 87, .18); }
+.horizon.off h2::before { border-style: dashed; border-color: var(--ink-3); }
+.horizon.ask h2::before { border-color: var(--ink-3); }
+/* Further out, fainter: the rail reads like the extension's age hairline in reverse. */
+.horizon.ahead + .horizon.ahead h2::before { border-color: var(--ink-3); }
+.horizon.ahead + .horizon.ahead + .horizon.ahead h2::before { border-style: dotted; }
+
+.horizon .body > :first-child { margin-top: 0; }
+.horizon h3 { margin: 26px 0 6px; font: 400 20px/1.3 var(--serif); color: var(--ink); }
+.horizon p { margin: 0 0 12px; }
+.horizon ul { margin: 0 0 12px; padding-left: 22px; }
+.horizon li { margin: 6px 0; }
+
+/* Checkbox: empty when planned, green and ticked when shipped. Everything in Today is shipped. */
+.horizon li.task, .horizon.today li { position: relative; list-style: none; }
+.horizon li.task::before, .horizon.today li::before {
+  content: ""; position: absolute; left: -22px; top: .42em; width: 11px; height: 11px;
+  border: 1.5px solid var(--ink-3); font: 700 9px/11px var(--mono); text-align: center; color: var(--paper);
+}
+.horizon li.task.done, .horizon.today li { color: var(--ink); }
+.horizon li.task.done::before, .horizon.today li::before { content: "✓"; background: var(--keep); border-color: var(--keep); }
+
+.horizon.today .body > p:first-child { margin-bottom: 16px; font: 400 21px/1.35 var(--serif); color: var(--ink); }
+.horizon.today ul { columns: 2; column-gap: 40px; }
+.horizon.today li { margin: 0 0 10px; break-inside: avoid; }
+
 /* ---------- footer ---------- */
 
 .foot { padding: 28px 0 40px; }
@@ -166,4 +215,12 @@ kbd {
   .grid { grid-template-columns: 1fr; }
   .grid > div, .grid > div + div { padding: 18px 0; border-right: 0 !important; }
   .split { grid-template-columns: 1fr; gap: 0; }
+  .horizon { grid-template-columns: 1fr; gap: 14px; padding: 26px 0 28px; }
+  .horizon.today ul { columns: 1; }
+}
+
+/* Four nav links only just fit a 375px phone; tighten them below that. */
+@media (max-width: 400px) {
+  .nav { gap: 10px; }
+  .nav a { letter-spacing: .06em; }
 }

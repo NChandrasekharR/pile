@@ -4,6 +4,21 @@ Pile 1.0 is good at the first half of the problem: you can close every tab witho
 
 The measure that matters is how many links get resolved each week (opened, kept, marked done or deleted), not how many get saved. A reading list that only grows becomes another pile of guilt, and the unread badge becomes a reminder of it.
 
+Boxes get ticked as things ship. Each release moves them up into Today.
+
+## Today
+
+As of 9 November 2026, Pile 1.0 can:
+
+- Save every tab the moment you close it, including a whole window at once
+- Pick up tabs lost to a browser quit from Recently Closed on the next launch
+- Keep tabs closed together as one group
+- Fold duplicates and strip tracking parameters, so an article closed four times is one row
+- Search titles and links, filter by site, and sort by date, site, title or times closed
+- Triage one link at a time, full screen, from the keyboard
+- Export as Markdown, JSON or a bookmarks file
+- Do all of it on your computer, with no account, no server and no network requests
+
 ## Now
 
 Small, cheap to undo, quicker to ship than to debate.

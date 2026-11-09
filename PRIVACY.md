@@ -1,6 +1,6 @@
 # Pile privacy policy
 
-_Effective 9 November 2026_
+_Effective 9 November 2026 · also published at [nchandrasekharr.github.io/pile/privacy](https://nchandrasekharr.github.io/pile/privacy/)_
 
 Pile is a browser extension that saves the tabs you close into a reading list. It works entirely inside your browser, on your computer. This page explains what it keeps and where.
 

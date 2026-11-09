@@ -8,7 +8,7 @@ Pile is a Chrome extension (Manifest V3). It records each tab as you close it an
 
 [![Three windows of tabs streaming into Pile, then Pile opening with them inside](docs/pile-teaser.gif)](docs/pile-story.mp4)
 
-**[Watch the 44-second demo, with sound →](docs/pile-story.mp4)**
+**[Watch the 44-second demo, with sound →](docs/pile-story.mp4)** · Website: [nchandrasekharr.github.io/pile](https://nchandrasekharr.github.io/pile/)
 
 ## Install
 

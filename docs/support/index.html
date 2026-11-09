@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support · Pile</title>
+  <meta name="description" content="Help with the Pile Chrome extension: common questions and how to report a problem." />
+  <link rel="icon" href="../favicon.png" />
+  <link rel="stylesheet" href="../site.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="../"><span class="mark" aria-hidden="true"></span><b>PILE</b></a>
+      <nav class="nav">
+        <a href="./" aria-current="page">Support</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="https://github.com/NChandrasekharR/pile">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap doc">
+    <h1>Support</h1>
+    <p class="date">Help with Pile</p>
+
+    <div class="callout"><p>Found a bug or have an idea? <a href="https://github.com/NChandrasekharR/pile/issues/new">Open an issue on GitHub</a>. Include your Chrome version and what you did right before it happened.</p></div>
+
+    <h2>Common questions</h2>
+    <div class="qa">
+      <details open>
+        <summary>How do I open Pile?</summary>
+        <p>Click the Pile icon in the toolbar, or press <code>Alt</code> + <code>Shift</code> + <code>P</code>. If the icon is hidden, click the puzzle-piece Extensions button and pin Pile.</p>
+      </details>
+      <details>
+        <summary>The keyboard shortcut doesn't work.</summary>
+        <p>Another extension may already use it. Go to <code>chrome://extensions/shortcuts</code> and set a different shortcut for “Open Pile”.</p>
+      </details>
+      <details>
+        <summary>I quit the browser and some tabs didn't show up.</summary>
+        <p>Quitting the browser closes tabs without telling extensions. Pile picks them up from the browser's Recently Closed list the next time the browser starts. That list holds only 25 entries, though a whole window counts as one entry. Click <strong>Pull from browser</strong> to check it again by hand.</p>
+      </details>
+      <details>
+        <summary>Some pages never appear in Pile.</summary>
+        <p>On purpose: Pile only keeps web pages (<code>http</code> and <code>https</code>). Browser pages like <code>chrome://settings</code>, extension pages and local files are skipped.</p>
+      </details>
+      <details>
+        <summary>I deleted something by mistake.</summary>
+        <p>Press <code>u</code>, or click <strong>Undo</strong> in the message at the bottom of the screen.</p>
+      </details>
+      <details>
+        <summary>Where is my reading list stored?</summary>
+        <p>In your browser's local storage, on this computer only. It isn't synced and is never sent anywhere. See the <a href="../privacy/">privacy policy</a>.</p>
+      </details>
+      <details>
+        <summary>How do I move my pile to another computer or browser?</summary>
+        <p>Pile doesn't sync. Use <strong>Export</strong> and choose <strong>Bookmarks file</strong>; any browser can import it. Markdown and JSON exports are there too if you want the list somewhere else.</p>
+      </details>
+      <details>
+        <summary>What happens if I uninstall Pile?</summary>
+        <p>Your reading list is deleted with it. Export first if you want to keep it.</p>
+      </details>
+    </div>
+
+    <h2>Still stuck?</h2>
+    <p><a href="https://github.com/NChandrasekharR/pile/issues">Browse existing issues</a> or <a href="https://github.com/NChandrasekharR/pile/issues/new">open a new one</a>.</p>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <span>Pile · free and open source (MIT)</span>
+      <span><a href="../">Home</a> · <a href="../privacy/">Privacy</a> · <a href="https://github.com/NChandrasekharR/pile">GitHub</a></span>
+    </div>
+  </footer>
+</body>
+</html>

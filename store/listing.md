@@ -6,7 +6,7 @@ Everything to paste into the [Developer Dashboard](https://chrome.google.com/web
 
 - [ ] Register as a Chrome Web Store developer and pay the one-time fee. The dashboard shows the current amount.
 - [ ] Turn on 2-Step Verification for the Google account you publish from.
-- [ ] Push `PRIVACY.md`, so the privacy policy URL below resolves.
+- [ ] Check the website is up: homepage, support and privacy pages all load (served from `docs/` by GitHub Pages).
 - [ ] Build the upload: `store/package.sh` writes `dist/pile-<version>.zip` with only the extension's own files.
 
 ## Package
@@ -64,8 +64,8 @@ Free and open source: https://github.com/NChandrasekharR/pile
 | Small promo tile (440×280) | `store/promo-small-440x280.jpg` |
 | Marquee promo tile (1400×560) | `store/promo-marquee-1400x560.jpg` |
 
-**Homepage URL:** `https://github.com/NChandrasekharR/pile`
-**Support URL:** `https://github.com/NChandrasekharR/pile/issues`
+**Homepage URL:** `https://nchandrasekharr.github.io/pile/`
+**Support URL:** `https://nchandrasekharr.github.io/pile/support/`
 
 ## Privacy
 
@@ -116,7 +116,7 @@ If the form asks for detail on web history:
 Pile stores the URL, title and closing time of tabs the user closes, in chrome.storage.local on the user's device only. It is never transmitted.
 ```
 
-**Privacy policy URL:** `https://github.com/NChandrasekharR/pile/blob/main/PRIVACY.md`
+**Privacy policy URL:** `https://nchandrasekharr.github.io/pile/privacy/`
 
 ## Distribution
 

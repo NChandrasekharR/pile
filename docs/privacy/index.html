@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy policy · Pile</title>
+  <meta name="description" content="What the Pile Chrome extension stores, where it keeps it, and what it never does." />
+  <link rel="icon" href="../favicon.png" />
+  <link rel="stylesheet" href="../site.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="../"><span class="mark" aria-hidden="true"></span><b>PILE</b></a>
+      <nav class="nav">
+        <a href="../support/">Support</a>
+        <a href="./" aria-current="page">Privacy</a>
+        <a href="https://github.com/NChandrasekharR/pile">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap doc">
+    <h1>Privacy policy</h1>
+    <p class="date">Effective 9 November 2026</p>
+
+    <div class="callout"><p>Short version: Pile keeps the tabs you close in your browser, on your computer. Nothing is ever sent anywhere.</p></div>
+
+    <p>Pile is a browser extension that saves the tabs you close into a reading list. It works entirely inside your browser, on your computer. This page explains what it keeps and where.</p>
+
+    <h2>What Pile stores</h2>
+    <p>When you close a tab, Pile saves:</p>
+    <ul>
+      <li>the page's address (URL), with tracking parameters such as <code>utm_*</code> and <code>fbclid</code> removed</li>
+      <li>the page's title and site name</li>
+      <li>when you closed it, and how many times you've closed the same address</li>
+      <li>whether you've marked it read, kept or done</li>
+      <li>which tabs you closed together</li>
+    </ul>
+    <p>Pile only saves <code>http</code> and <code>https</code> pages. Browser pages (<code>chrome://</code> and similar), extension pages and local files are ignored.</p>
+    <p>To do this, Pile also keeps a temporary list of the URLs and titles of your open tabs, because the browser doesn't say which page a tab held at the moment it closes. That list lives in session storage and is cleared when the browser quits.</p>
+    <p>When you install Pile, when the browser starts, and when you click <strong>Pull from browser</strong>, Pile reads the browser's own Recently Closed list and adds those tabs in the same way.</p>
+    <p>Site icons are shown from the browser's own favicon cache.</p>
+
+    <h2>Where it's stored</h2>
+    <p>Everything is kept in your browser's local extension storage (<code>chrome.storage.local</code>) on this computer. It isn't synced to your Google account or any other service.</p>
+
+    <h2>What Pile does not do</h2>
+    <ul>
+      <li>It makes no network requests. Nothing you save leaves your computer.</li>
+      <li>It has no account, no server, no analytics and no advertising.</li>
+      <li>It doesn't read the content of the pages you visit, only their address and title.</li>
+      <li>It doesn't sell, share or transfer your data to anyone.</li>
+    </ul>
+
+    <h2>Exporting and deleting</h2>
+    <p><strong>Export</strong> creates a Markdown, JSON or bookmarks file and saves it to your computer, only when you ask it to.</p>
+    <p>You can delete any link inside Pile, or delete everything shown at once. Removing the extension deletes all of Pile's data from your browser, so export first if you want to keep it.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be published here with a new effective date. The full history is in the project's <a href="https://github.com/NChandrasekharR/pile/commits/main/PRIVACY.md">commit log</a>.</p>
+
+    <h2>Contact</h2>
+    <p>Questions or concerns: see <a href="../support/">Support</a>, or <a href="https://github.com/NChandrasekharR/pile/issues">open an issue on GitHub</a>.</p>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <span>Pile · free and open source (MIT)</span>
+      <span><a href="../">Home</a> · <a href="../support/">Support</a> · <a href="https://github.com/NChandrasekharR/pile">GitHub</a></span>
+    </div>
+  </footer>
+</body>
+</html>

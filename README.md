@@ -8,11 +8,19 @@ Pile is a Chrome extension (Manifest V3). It records each tab as you close it an
 
 [![Three windows of tabs streaming into Pile, then Pile opening with them inside](docs/pile-teaser.gif)](docs/pile-story.mp4)
 
-**[Watch the 44-second demo, with sound →](docs/pile-story.mp4)** · Website: [nchandrasekharr.github.io/pile](https://nchandrasekharr.github.io/pile/)
+**[Add to Chrome →](https://chromewebstore.google.com/detail/pile/hojmpdhoiphnbokfmfgacehjnfmbdlfg)** · [Watch the 44-second demo, with sound](docs/pile-story.mp4) · Website: [nchandrasekharr.github.io/pile](https://nchandrasekharr.github.io/pile/)
 
 ## Install
 
-Pile isn't on the Chrome Web Store, so load it unpacked.
+Get it from the [Chrome Web Store](https://chromewebstore.google.com/detail/pile/hojmpdhoiphnbokfmfgacehjnfmbdlfg). That works in Chrome and in other browsers that install from the Chrome Web Store, such as Brave, Arc and Edge. Pile opens a pinned tab and immediately pulls whatever your browser is holding in Recently Closed.
+
+**Install it before you quit the browser.** Chrome's Recently Closed list only holds 25 entries and gets wiped on restart. An entry can be a whole closed window, and the API hands back every tab inside it, so those 25 entries can be hundreds of links. After a restart they're gone for good.
+
+From then on Pile records every tab as you close it, so the 25-entry ceiling stops mattering.
+
+### From source
+
+To run your own copy, load it unpacked.
 
 1. Clone it somewhere permanent, like `~/Developer/pile`, not Downloads. Chrome loads it from disk every launch, so if the folder moves, the extension breaks.
 
@@ -23,11 +31,6 @@ Pile isn't on the Chrome Web Store, so load it unpacked.
 2. Go to `chrome://extensions` (or `arc://extensions`, `edge://extensions`, `brave://extensions`).
 3. Turn on **Developer mode**, top right.
 4. Click **Load unpacked** and pick the folder.
-5. Pile opens a pinned tab and immediately pulls whatever your browser is holding in Recently Closed.
-
-**Install it before you quit the browser.** Chrome's Recently Closed list only holds 25 entries and gets wiped on restart. An entry can be a whole closed window, and the API hands back every tab inside it, so those 25 entries can be hundreds of links. After a restart they're gone for good.
-
-From then on Pile records every tab as you close it, so the 25-entry ceiling stops mattering.
 
 ## Using it
 

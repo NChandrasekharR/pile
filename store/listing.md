@@ -2,6 +2,8 @@
 
 Everything to paste into the [Developer Dashboard](https://chrome.google.com/webstore/devconsole), tab by tab.
 
+Live listing: https://chromewebstore.google.com/detail/pile/hojmpdhoiphnbokfmfgacehjnfmbdlfg
+
 ## Before you start
 
 - [ ] Register as a Chrome Web Store developer and pay the one-time fee. The dashboard shows the current amount.

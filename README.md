@@ -54,7 +54,7 @@ Toolbar icon or `Alt+Shift+P` opens the pile. The badge counts unread.
 
 Everything lives in `chrome.storage.local` on this machine. Nothing is sent anywhere: the extension has no host permissions and makes no network requests. Favicons come from the browser's own cache.
 
-Deleting the extension deletes the pile, so export first if you care.
+Deleting the extension deletes the pile, so export first if you care. The full [privacy policy](PRIVACY.md) spells out exactly what's kept.
 
 | permission | why |
 |---|---|

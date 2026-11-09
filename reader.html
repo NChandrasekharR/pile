@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pile</title>
+  <link rel="stylesheet" href="reader.css" />
+</head>
+<body>
+  <header class="masthead">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <h1>Pile</h1>
+    </div>
+
+    <p class="tally" id="tally">Reading the pile…</p>
+
+    <div class="tools">
+      <label class="search">
+        <span class="sr">Search the pile</span>
+        <input id="q" type="search" placeholder="Search titles and links   /" autocomplete="off" spellcheck="false" />
+      </label>
+      <button id="triage" class="btn" type="button">Triage</button>
+      <button id="import" class="btn" type="button">Pull from browser</button>
+      <div class="menu">
+        <button id="exportBtn" class="btn" type="button" aria-haspopup="true" aria-expanded="false">Export</button>
+        <div class="menu-pop" id="exportPop" hidden>
+          <button type="button" data-export="md">Markdown</button>
+          <button type="button" data-export="json">JSON</button>
+          <button type="button" data-export="html">Bookmarks file</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="frame">
+    <aside class="rail">
+      <nav class="facets" id="stateFacets" aria-label="Status">
+        <p class="rail-head">Status</p>
+        <button class="facet is-on" type="button" data-state="unread"><span>Unread</span><b id="c-unread">0</b></button>
+        <button class="facet" type="button" data-state="starred"><span>Kept</span><b id="c-starred">0</b></button>
+        <button class="facet" type="button" data-state="archived"><span>Done</span><b id="c-archived">0</b></button>
+        <button class="facet" type="button" data-state="all"><span>Everything</span><b id="c-all">0</b></button>
+      </nav>
+
+      <div class="facets">
+        <p class="rail-head">Sort</p>
+        <select id="sort" class="select">
+          <option value="new">Newest closed</option>
+          <option value="old">Oldest closed</option>
+          <option value="domain">By site</option>
+          <option value="count">Most re-closed</option>
+          <option value="title">By title</option>
+        </select>
+      </div>
+
+      <div class="facets" id="domainFacets">
+        <p class="rail-head">Sites <button id="clearDomains" class="mini" type="button" hidden>clear</button></p>
+        <div id="domainList"></div>
+      </div>
+    </aside>
+
+    <main class="list" id="list" tabindex="-1"></main>
+  </div>
+
+  <footer class="dock" id="dock" hidden>
+    <span id="dockCount">0 shown</span>
+    <div class="dock-acts">
+      <button class="btn" type="button" data-bulk="open">Open first 10</button>
+      <button class="btn" type="button" data-bulk="archive">Mark all done</button>
+      <button class="btn danger" type="button" data-bulk="delete">Delete all shown</button>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" hidden>
+    <span id="toastText"></span>
+    <button id="toastUndo" class="mini" type="button">Undo</button>
+  </div>
+
+  <section class="triage-view" id="triageView" hidden aria-live="polite">
+    <div class="triage-inner">
+      <p class="triage-progress" id="triageProgress"></p>
+      <p class="triage-domain" id="triageDomain"></p>
+      <h2 class="triage-title" id="triageTitle"></h2>
+      <p class="triage-url" id="triageUrl"></p>
+      <div class="triage-keys">
+        <button type="button" data-triage="open"><kbd>↵</kbd> Open and mark done</button>
+        <button type="button" data-triage="keep"><kbd>K</kbd> Keep</button>
+        <button type="button" data-triage="archive"><kbd>A</kbd> Done</button>
+        <button type="button" data-triage="delete"><kbd>X</kbd> Delete</button>
+        <button type="button" data-triage="skip"><kbd>→</kbd> Skip</button>
+        <button type="button" data-triage="quit"><kbd>Esc</kbd> Leave</button>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="reader.js"></script>
+</body>
+</html>

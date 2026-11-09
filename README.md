@@ -6,6 +6,10 @@ Every tab you close gets kept as a reading list you can come back to.
 
 Pile is a Chrome extension (Manifest V3). It records each tab as you close it and lays the lot out as a plain, searchable index: titles in a serif, everything else in small mono type. It has no host permissions, makes no network requests, and keeps everything on your machine.
 
+[![Three windows of tabs streaming into Pile, then Pile opening with them inside](docs/pile-teaser.gif)](docs/pile-story.mp4)
+
+**[Watch the 44-second demo, with sound →](docs/pile-story.mp4)**
+
 ## Install
 
 Pile isn't on the Chrome Web Store, so load it unpacked.
